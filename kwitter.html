@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css">
+    <link href="//fonts.googleapis.com/css?family=Proxima+Nova:300,400,600"    
+  rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Avenir:400,600" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400&display=swap" rel="stylesheet">
+
+
+    <title>Kwitter</title>
+</head>
+<body>
+    <center>
+    <h1> Choose a room </h1>
+    <h2 id="welcomename"> ! </h2>
+    <div id = "focalpoint">
+    <div class = "herosection" id = "a"></div>
+    <div class = "herosection" id = "b"></div>
+    <div class = "herosection" id = "c"></div>
+    <div class = "herosection" id = "d"></div>
+    </div>
+    <div id = "logindiv"> 
+        <img id = "logo" src = "Jiya'sLogo.png"> 
+        <br> 
+        <br> 
+        <input type = "text" class = "form-control" id = "roomname" placeholder="Enter room name here">
+        <br>
+        <br> 
+        <button id = "addroom" class = "btn btn-primary" onclick="addRoom()"> Add Room</button>
+    </div> 
+    <div id = "rooms"> 
+    </div>
+    </center>
+<btn onclick = "LogOut()" id = "logout" class="btn btn-primary" style="float:right; margin: 20px;font-size: 15px;"> Logout <i class="glyphicon glyphicon-log-out"></i></btn>
+</body>
+<script src = "kwitter.js">
+</script>
+</html>
